@@ -1,0 +1,22 @@
+body{
+/*	background-color: aqua;*/
+	font-family: Verdana;
+	font-size: 1.2em;
+}
+
+.done{
+	text-decoration: line-through;
+}
+li{
+	/*width: 100px;
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 2px;*/
+}
+
+span{
+	color: red;
+}
+.lines{
+	color: yellow;
+}
