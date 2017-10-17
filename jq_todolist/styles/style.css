@@ -1,12 +1,14 @@
+/** {
+	margin: 0px;
+	padding: 0px;
+}*/
+
 body {
 /*	background-color: aqua;*/
 	font-family: Verdana;
 	font-size: 1.2em;
 }
 
-.done {
-	text-decoration: line-through;
-}
 li {
 	width: 150px;
 	border: 1px solid black;
@@ -14,6 +16,11 @@ li {
 	padding: 2px;
 	margin: 2px;
 }
+
+li:hover {
+	color: rgb(15, 66, 209);
+}
+
 
 button {
 	font-weight: 700;
@@ -33,4 +40,19 @@ button:hover {
 button:active {
   	background: rgb(33,147,90);
   	box-shadow: 0 3px rgb(33,147,90) inset;
+}
+
+
+.done {
+	text-decoration: line-through;
+	color: rgb(242, 77, 44);
+	/*font-style: italic;*/
+}
+/*.undone {
+	text-decoration: none;
+	color: black;
+}*/
+
+.textp {
+	
 }
