@@ -1,0 +1,25 @@
+body {
+	background-color: aqua;
+	font-family: Verdana;
+}
+
+.header{
+	height: : 200px;
+	text-align: center;
+	margin: 0 auto;
+	background-color: blue;
+	color: red;
+	font-size: 16px;
+	font-style: italic;
+	position: relative;
+}
+
+.sidebar{
+	background-color: red;
+	height: 300px;
+	width: 200px;
+}
+
+div {
+	
+}
