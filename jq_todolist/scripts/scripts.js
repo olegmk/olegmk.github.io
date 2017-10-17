@@ -32,8 +32,6 @@ $(document).ready(function(){
 		$("li").hide("slow");
 	});	
 
-	
-
 	/*function divtext(){
 	$(".accordion h3:first").addClass("active");
 	$(".accordion p:not(:first)").hide();
@@ -45,7 +43,4 @@ $(document).ready(function(){
 
 	});
 	};*/
-
-
-
 });
