@@ -5,19 +5,38 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
+	<!--<script type="text/javascript" src="scripts/moment-with-locales.js"></script>-->
 	<script type="text/javascript" src="scripts/scriptjq1.js"></script>
 </head>
 <body>
 <div id="task">
 	<select id="city">
-		<option>Виберіть місто...</option>
+		<option value="">Виберіть місто...</option>
 		<option value="707471">Івано-Франківськ</option>
 		<option value="702550">Львів</option>
 		<option value="700507">Надвірна</option>
 		<option value="700753">Моршин</option>
+		<option value="2643743">Лондон</option>
+	</select>
+	<select id="day">
+		<option value="">Виберіть день</option>
+		<option value="one">1 день</option>
+		<option value="five">5 днів</option>
 	</select>
 </div>
-<div id=result></div>
+<!--<div>
+
+	<button id="btnoneday">1 день</button>
+	<button id="btn5day">5 днів</button>
+	<!--<button id="btn16day">16 днів</button>
+</div>-->
+<div id="date"></div>
+<div id="result">
+	<!--<ul id="result"></ul> -->
+</div>
+<div id="result5day">
+	<ul id="result5day"></ul>
+</div>
 
 </body>
 </html>

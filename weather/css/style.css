@@ -5,17 +5,48 @@
 
 body {
 	background-color: aqua;
-	font-style: Verdana;
+	font-family: Verdana;
 	font-size: 16px;
 }
 
 #city {
-	margin: auto;
-    width: 50%;
+	width: auto;
+    width: 20%;
     border: 3px solid green;
-    padding: 10px;
+    padding: 5px;
 }
 
-#result {
-	
-	}
+li {
+	border: 1px solid black;
+	border-collapse: collapse;
+	width: 220px;
+	padding: 5px;
+}
+
+#result5day li {
+	float: left;
+}
+
+button {
+	font-weight: 700;
+  	color: white;
+  	text-decoration: none;
+  	padding: .8em 1em calc(.8em + 3px);
+  	border-radius: 3px;
+  	background: rgb(64,199,129);
+  	box-shadow: 0 -3px rgb(53,167,110) inset;
+  	transition: 0.2s;
+} 
+
+button:hover {
+	background: rgb(53, 167, 110); 
+}
+
+button:active {
+  	background: rgb(33,147,90);
+  	box-shadow: 0 3px rgb(33,147,90) inset;
+}
+
+ul {
+    list-style-position: inside;
+}
