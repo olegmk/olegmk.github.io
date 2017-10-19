@@ -1,19 +1,20 @@
-* {
-	padding: 5px;
-	margin: 5px;
-}
+/** {
+	padding: 0px;
+	margin: 0px;
+}*/
 
 body {
 	background-color: aqua;
 	font-family: Verdana;
-	font-size: 16px;
+	font-size: 18px;
 }
 
-#city {
+#city, #day {
 	width: auto;
     width: 20%;
     border: 3px solid green;
-    padding: 5px;
+    padding: 10px;
+    margin: 20px;
 }
 
 li {
@@ -23,7 +24,7 @@ li {
 	padding: 5px;
 }
 
-#result5day li {
+#result5day {
 	float: left;
 }
 
@@ -46,7 +47,25 @@ button:active {
   	background: rgb(33,147,90);
   	box-shadow: 0 3px rgb(33,147,90) inset;
 }
+td {
+	border: 1px solid black;
+	border-collapse:collapse;
+	width: 220px;
+	/*padding: 5px;*/
+}
 
-ul {
-    list-style-position: inside;
+tr {
+	/*margin-left: 50px;*/
+	float: left;
+}
+
+table {
+	border: 1px solid black;
+	border-collapse:collapse;
+	padding-left: 30px;
+	
+}
+
+h3 {
+	padding-left: 30px;
 }

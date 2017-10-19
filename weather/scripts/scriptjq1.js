@@ -26,10 +26,12 @@ $(document).ready(function(){
     			//$("#result").append("<li> Дата " + (moment(dateunix).format('LL'))  + "</li>");
     			//$("#result").append("<li> Дата " + (moment(dateunix).format('LLL'))  + "</li>");
     			$("#result").append("<h3>Місто - " + dateweather.name + "</h3>");
-    			$("#result").append("<li> Дата - " + vdate  + "</li>");
-    			$("#result").append("<li>Температура - " + (dateweather.main.temp - 273.15).toFixed(2) + "</li>");
-     			$("#result").append("<li>Тиск - " + (dateweather.main.pressure * 0.750063755419211).toFixed(2) + "</li>");
-     			$("#result").append("<li>Вологість - " + dateweather.main.humidity + "%</li>");
+    			$("#result").add('<table></table>');
+    			$("#result").append("<tr><td>Дата - " + vdate  + "</td></tr>");
+    			$("#result").append("<tr><td>Температура - " + (dateweather.main.temp - 273.15).toFixed(2) + "</td></tr>");
+     			$("#result").append("<tr><td>Тиск - " + (dateweather.main.pressure * 0.750063755419211).toFixed(2) + "</td></tr>");
+     			$("#result").append("<tr><td>Вологість - " + dateweather.main.humidity + "%</td></tr>");
+     			
     		});
 		} 
 		else {
@@ -43,16 +45,18 @@ $(document).ready(function(){
 				$("#result").empty();
 				$("#result5day").empty();
 				$("#result5day").html("<h3>Місто - " + dateweather.city.name + "</h3>");
-				for (i = 0; i <= 6; i++){
+				for (i = 0; i <= (dateweather.cnt-1); i++){
 					console.log(i);
 					var vdate = new Date(dateweather.list[i].dt*1000);
 					console.log(vdate);	
 					vdate = (vdate.getDate() + '.' + (vdate.getMonth()+1) + '.' + vdate.getFullYear() + " " +vdate.getHours() + ":" +vdate.getMinutes());
 					console.log(vdate);
-					$("#result5day").append("<li> Дата - " + vdate + "</li>");
-    				$("#result5day").append("<li>Температура - " + (dateweather.list[i].main.temp - 273.15).toFixed(2) + "</li>");
-     				$("#result5day").append("<li>Тиск - " + (dateweather.list[i].main.pressure * 0.750063755419211).toFixed(2) + "</li>");
-     				$("#result5day").append("<li>Вологість - " + dateweather.list[i].main.humidity + "%</li>");
+					$("#result5day").add('<table></table>');
+					$("#result5day").append("<tr><td>Дата - " + vdate + "</td></tr>");
+    				$("#result5day").append("<tr><td>Температура - " + (dateweather.list[i].main.temp - 273.15).toFixed(2) + "</td></tr>");
+     				$("#result5day").append("<tr><td>Тиск - " + (dateweather.list[i].main.pressure * 0.750063755419211).toFixed(2) + "</td></tr>");
+     				$("#result5day").append("<tr><td>Вологість - " + dateweather.list[i].main.humidity + "%</td></tr>");
+     				$("#result5day").append("<br>");
 					}
 				//var vdate = new Date(dateweather.dt*1000);
 				//$("#result").append("<li> Дата " + date.getDate() + "-" + (date.getMonth() + 1) + "-" + date.getFullYear()  + "</li>");
